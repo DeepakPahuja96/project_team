@@ -6,9 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HRMS Project</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet"/>   <!-- select2 css  -->
     <link rel="stylesheet" href="css/projects.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>             <!-- select2 js -->
     <script src="js/projects.js"></script>
 
 </head>
@@ -47,7 +49,7 @@
                         </div>
                         <div class="col col-lg-12">
                            <div class="table-responsive table-hover">          
-                                <table class="table table-hover table-striped" id="UserListTable">
+                                <table class="table table-hover table-striped" id="ProjectsListTable">
                                     <thead class="text-center">
                                     <tr>
                                         <th class="text-center">#</th>
@@ -279,7 +281,7 @@
                         </div>
                     </div>
                     <div class="row pull-right" id="right_div">
-                        <div class="container-fluid">
+                        <div class="container-fluid" style="height:auto;">
                             <!-- <div class="login_heading text-center">NEW PROJECT</div> -->
                             <div class="col col-lg-12 main_heading text-center">
                                 NEW PROJECT
@@ -294,18 +296,20 @@
                                         </div>
                                         <div class="form-group">
                                             <label for="StartDate">Start Date</label>
-                                            <input type="password" class="form-control" id="StartDate">
+                                            <input type="date" class="form-control" id="StartDate">
                                         </div>
                                         <div class="form-group">
                                             <label for="Deadline">Deadline</label>
-                                            <input type="text" class="form-control" id="Deadline">
+                                            <input type="date" class="form-control" id="Deadline">
                                         </div>
                                         <div class="form-group">
                                             <label for="Techstack">TechStack</label>
-                                            <input type="text" class="form-control" id="Techstack">
+                                            <select style="width:100%;" id="select2dropdown" class="selectbox" name="" multiple="multiple" >
+                                                
+                                            </select>
                                         </div>
-                                        <button type="button" class="btn btn-success" style="width:100%; margin-bottom: 15px;" id="LoginBtn" >ADD PROJECT</button>
                                     </form>
+                                    <button type="button" class="btn btn-success" style="width:100%; margin-bottom: 15px;" id="AddProjectBtn" >ADD PROJECT</button>
                                 </div>
                             </div>
 

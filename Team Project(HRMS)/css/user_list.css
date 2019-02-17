@@ -12,7 +12,7 @@ ul.navbar-nav{
 }
 .background_pic{
     min-height: 100%;
-    background-image: url(https://images.unsplash.com/photo-1536553176585-67a46418b7d1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=882&q=80);
+    background-image: url(https://images.pexels.com/photos/268415/pexels-photo-268415.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -112,7 +112,6 @@ div.form_heading, .main_heading{
 } */
 #plus_btn{
     animation: animate 1.5s ease-in-out infinite;
-    animation-delay: 2.5s;
 }
 
 @keyframes animate{
