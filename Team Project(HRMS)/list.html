@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>LogIn Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/user_list.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -46,9 +47,11 @@
 <!-- *******************//////////////***********         NAVBAR ENDED        *******************//////////////***********   -->
                
                 <div class="floating_button">
-                    <a>
-                        <button type="button" class="btn btn-success" id="createNewUser" style=" border-radius: 15px; border: none; background-color: orangered;">+</button>
+                    <a id="createNewUser">    <i id="plus_btn" class="fa fa-plus-circle" style="font-size: 50px; color: orangered;" aria-hidden="true"></i>
+
+                        <!-- <button type="button" class="btn btn-success" id="createNewUser" style=" border-radius: 15px; border: none; background-color: orangered;">+</button> -->
                     </a>
+                    <!-- <div id="message">ADD USER</div> -->
                 </div>
 
                 <div class="container" style="width:80%;">

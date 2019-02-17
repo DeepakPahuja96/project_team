@@ -100,31 +100,35 @@ div.form_heading, .main_heading{
     position: fixed;
     top: 40%;
     z-index: 1000;
-    left: 87%;
+    left: 90%;
     transition: rotate 0.3s linear;
     
 }
-/* @-webkit-keyframes rotate{
-    0% { transform: scale(1) rotate(0);}
-    50% { transform: scale(0.5) rotate(180deg);}
-    100% { transform: scale(1) rotate(360deg);}
+/* #message{
+    display: none;
 }
-.floating_button:hover{
-    border-radius: 30px;
-    background: rgba(16, 219, 213, 0.6);
-    box-shadow:    
-        0px 0px 5px 0px rgba(246, 212, 163, 0.5) inset,
-        0px -1px 5px 4px rgba(170, 77, 27, 0.2) inset,
-        0px 0px 0px 7px #fff, 
-        1px 4px 5px 8px rgba(188, 188, 188, 0.6),
-        0px 0px 0px 9px #fff;
-        @-webkit-keyframes rotate{
-            0% { transform: scale(1) rotate(0);}
-            50% { transform: scale(0.5) rotate(180deg);}
-            100% { transform: scale(1) rotate(360deg);}
-        }
+#createNewUser:hover #message{
+    display: block;
 } */
+#plus_btn{
+    animation: animate 1.5s ease-in-out infinite;
+    animation-delay: 2.5s;
+}
 
+@keyframes animate{
+    0%{
+        transform: scale(1);
+        color: orangered;
+    }
+    50%{
+        transform: scale(1.5);
+        color: yellow;
+    }
+    100%{
+        transform: scale(1);
+        color: orangered;
+    }
+}
 @media only screen and (max-width: 600px) {
     #right_div, #left_div{
         max-width:80%;
@@ -143,8 +147,8 @@ div.form_heading, .main_heading{
     #createNewUser{
         font-size: 80%;
     }
+    .floating_button{
+        left: 87%;
+    }
 
-}
-@media only screen and (max-width: 992px) {
-   
 }
